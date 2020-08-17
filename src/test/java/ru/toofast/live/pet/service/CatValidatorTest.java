@@ -21,7 +21,7 @@ class CatValidatorTest {
 
         Optional<Cat> bride = catExhibitionService.findBride(oriental);
 
-        Assertions.assertTrue(bride.isPresent());
+        Assertions.assertFalse(bride.isPresent());
         Assertions.assertEquals("Masha", bride.get().getName());
     }
 }
